@@ -1,12 +1,12 @@
 import React from 'react';
 import Layout from '../components/Layout';
 
-const Index = () => {
+const Recipes = () => {
 	return (
 		<Layout>
-			<h1>home page</h1>
+			<h1>Recipes</h1>
 		</Layout>
 	);
 };
 
-export default Index;
+export default Recipes;
