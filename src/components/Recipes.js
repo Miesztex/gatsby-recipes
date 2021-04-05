@@ -1,6 +1,6 @@
 import React from 'react';
-import AllRecipes from '../components/AllRecipes';
-import Layout from '../components/Layout';
+import AllRecipes from './AllRecipes';
+import Layout from './Layout';
 
 const Recipes = () => {
 	return (
