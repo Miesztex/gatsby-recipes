@@ -12,14 +12,9 @@ module.exports = {
 		title: 'Simply Recipes',
 		description: 'Nice and clean recipes site',
 		author: '@miesztex',
-		person: { name: 'mieszko', age: 24 },
-		simpleData: ['item1', 'item2'],
-		complexData: [
-			{ name: 'mieszko', age: 24 },
-			{ name: 'kinga', age: 25 },
-		],
 	},
 	plugins: [
+		`gatsby-plugin-react-helmet`,
 		`gatsby-plugin-image`,
 		`gatsby-plugin-sharp`,
 		`gatsby-transformer-sharp`,

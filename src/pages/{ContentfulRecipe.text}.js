@@ -5,7 +5,7 @@ import { BsClockHistory, BsClock, BsPeople } from 'react-icons/bs';
 import slugify from 'slugify';
 
 import Layout from '../components/Layout';
-
+import SEO from '../components/SEO';
 const RecipeTemplate = ({ data }) => {
 	const {
 		text,
@@ -18,6 +18,7 @@ const RecipeTemplate = ({ data }) => {
 	} = data.contentfulRecipe;
 	return (
 		<Layout>
+			<SEO title={text} description={description} />
 			<main className='page'>
 				<div className='recipe-page'>
 					<section className='recipe-hero'>

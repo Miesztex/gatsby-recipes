@@ -7,7 +7,7 @@ const RecipesList = ({ recipes = [] }) => {
 	return (
 		<div className='recipes-list'>
 			{recipes.map((item, idx) => {
-				const { id, text, image, prepTime, cookTime } = item;
+				const { text, image, prepTime, cookTime } = item;
 				const slug = slugify(text, { lower: true });
 				return (
 					<Link to={`/${slug}`} className='recipe' key={idx}>

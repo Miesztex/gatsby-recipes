@@ -4,11 +4,13 @@ import slugify from 'slugify';
 
 import Layout from '../components/Layout';
 import getTags from '../utils/getTags';
+import SEO from '../components/SEO';
 
 const Tags = ({ data }) => {
 	const allTags = getTags(data.allContentfulRecipe.nodes);
 	return (
 		<Layout>
+			<SEO title='Tags' />
 			<main className='page'>
 				<section className='tags-page'>
 					{allTags.map((tag, idx) => {
