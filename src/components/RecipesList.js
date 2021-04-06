@@ -6,11 +6,11 @@ import slugify from 'slugify';
 const RecipesList = ({ recipes = [] }) => {
 	return (
 		<div className='recipes-list'>
-			{recipes.map(item => {
+			{recipes.map((item, idx) => {
 				const { id, text, image, prepTime, cookTime } = item;
 				const slug = slugify(text, { lower: true });
 				return (
-					<Link to={`${slug}`} className='recipe' key={id}>
+					<Link to={`/${slug}`} className='recipe' key={idx}>
 						<GatsbyImage
 							image={getImage(image)}
 							className='recipe-img'
